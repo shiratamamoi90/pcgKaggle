@@ -18,6 +18,7 @@ Kaggle [Pokémon TCG AI Battle Challenge](https://www.kaggle.com/competitions/po
 | `docs/LINEAGE.md` | 技術の正典。全世代の中身・復元手順・**死んだ軸の台帳**（③k から読む） |
 | `docs/README.md` | 現在地・最終結果・Strategy カテゴリの仕様 |
 | `docs/WRITEUP.md` | **Strategy 提出レポート本体（日本語・提出するのはこちら）** |
+| `docs/WRITEUP-2000C.md` | 制限が文字数だった場合の短縮版（空白除く1,944字） |
 | `docs/WRITEUP-EN.md` | 同レポートの英語版（本文 1,969語・参考訳） |
 | `docs/WRITEUP-GUIDE.md` | Strategy カテゴリ（技術レポート）向けの整理 |
 | `docs/spec.md` `procedure.md` `eval-axes.md` | Simulation 期の設計意図（当時の記載を保持） |

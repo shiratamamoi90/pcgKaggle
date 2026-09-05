@@ -112,6 +112,7 @@ Card_ID List_EN.pdf / Card_ID List_JP.pdf   カードID一覧（各 130〜180MB�
 | **[FINDINGS.md](FINDINGS.md)** | **Strategy レポートの核**。何を測り、何が分かったか（主張8件と根拠の対応） |
 | **[CHRONICLE.md](CHRONICLE.md)** | **全48施策の詳細記録**。1件ごとに 目標 / 実施 / 成果・不具合 / 次に取った手順 |
 | **[WRITEUP.md](WRITEUP.md)** | **★これを提出する。** Strategy 提出レポート本体（日本語・約4,200字 ＝ 空白区切り627語 / 英訳換算 約1,900語）。1行目が Kaggle の Title、2行目が Subtitle、3行目以降が本文 |
+| **[WRITEUP-2000C.md](WRITEUP-2000C.md)** | **文字数制限だった場合の提出版**（空白除く1,944字・全角1,525字）。ルールの原文は "should not exceed 2000 words" だが、日本語ページが「2,000文字」と書いている場合はこちらを出す |
 | **[WRITEUP-EN.md](WRITEUP-EN.md)** | 同レポートの英語版（本文 1,969語）。**提出しない参考訳**。2,000語制限に収めるため、日本語版にある三すくみとチェックリストを削ってある |
 | **[WRITEUP-GUIDE.md](WRITEUP-GUIDE.md)** | **高評価Writeupの流れと書き方**。実際のルーブリックと1位提出物だけを根拠にした執筆指針 |
 | **[LINEAGE.md](LINEAGE.md)** | 技術の正典。全世代の中身・復元手順・死んだ軸の台帳（999行） |
