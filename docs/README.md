@@ -111,7 +111,8 @@ Card_ID List_EN.pdf / Card_ID List_JP.pdf   カードID一覧（各 130〜180MB�
 | **README.md**（本ファイル） | 現在地。まずここ |
 | **[FINDINGS.md](FINDINGS.md)** | **Strategy レポートの核**。何を測り、何が分かったか（主張8件と根拠の対応） |
 | **[CHRONICLE.md](CHRONICLE.md)** | **全48施策の詳細記録**。1件ごとに 目標 / 実施 / 成果・不具合 / 次に取った手順 |
-| **[WRITEUP.md](WRITEUP.md)** | **★Strategy 提出レポート本体（ドラフト）**。結果 → 最終成果物 → 流れ → 効いたこと/失敗したこと → 考察 → まとめ |
+| **[WRITEUP.md](WRITEUP.md)** | **★Strategy 提出レポート本体（日本語・約3,990字）** |
+| **[WRITEUP-EN.md](WRITEUP-EN.md)** | **★同レポートの英語版（本文 1,969語・2,000語制限内）** |
 | **[WRITEUP-GUIDE.md](WRITEUP-GUIDE.md)** | **高評価Writeupの流れと書き方**。実際のルーブリックと1位提出物だけを根拠にした執筆指針 |
 | **[LINEAGE.md](LINEAGE.md)** | 技術の正典。全世代の中身・復元手順・死んだ軸の台帳（999行） |
 | [spec.md](spec.md) / [procedure.md](procedure.md) / [eval-axes.md](eval-axes.md) | Simulation カテゴリの記載。**役目は終えたが削除しない**（下記） |
