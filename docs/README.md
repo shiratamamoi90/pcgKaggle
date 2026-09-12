@@ -126,8 +126,17 @@ Card_ID List_EN.pdf / Card_ID List_JP.pdf   カードID一覧（各 130〜180MB�
 
 ## ④ 残してあるもの / 消したもの
 
-**残す**: `episodes/`（145G, 一次データ）、`tools/`、`scratchpad/*.py`（分析スクリプト）、
-`logs/`（訓練ログ＝主張の証拠）、`champion/`、提出tar 7本、`docs/`、`requirements.txt`。
+**残す**: `episodes/`（145G, 一次データ）、`tools/`、`scratchpad/*.py`（分析スクリプト70本）、
+`logs/`（訓練ログ＝主張の証拠）、`champion/`、`docs/`、`requirements.txt`、
+**提出tar 4本**（`majkel_bc_6d`＝champion / `metapool` / `luca_solo` / `soup_g8`）。
+この4本は WRITEUP.md が数字を挙げている提出物に対応する（−186.1 / −259.4 Elo、5.4節の反復提出）。
+
+**2026-09-12 に削除（計 約470M）**: 提出tar 3本（`majkel_12d` `recency_d2` `yushin`＝
+レポートが数字を引いていない世代）、`scratchpad/_champ`（champion の複製）、
+`scratchpad/stg_d2`・`soup_0.7.pth`（重みは対応する提出tar の中にある）、
+`scratchpad/*.log`（`logs/` と重複）、`main_nn.py` `main_lethal.py` `deck_*.csv` `decks/`
+（作業用。出荷版は `champion/`）、`__pycache__`。
+同日、マージ済みリモートブランチ `claude/competition-deliverable-z2i4nf` も削除した。
 
 **2026-09-06 に削除（計 約8G・いずれも再構築可能）**: `venv/`（6.5G。`requirements.txt` を
 取得済みなので `python -m venv venv && pip install -r requirements.txt` で戻せる）、
