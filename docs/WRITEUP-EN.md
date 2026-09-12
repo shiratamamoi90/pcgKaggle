@@ -21,7 +21,7 @@ The submission is main.py, model.pth, deck.csv and the official engine.
 
 The policy is a small Transformer with two heads, AlphaZero style. The encoder reads the board and emits a value; the decoder reads the candidate actions and emits a policy. With d_model=128, heads=2, ff=256, enc=1, dec=1, 98% of the 12.53M parameters are embeddings and the body is 0.265M. Cards enter as sparse (index, value) pairs summed by EmbeddingBag, making set information order-independent, and obvious quantities such as damage dealt go to the decoder rather than being rediscovered.
 
-Training is behaviour cloning (BC) and nothing else: the top team's replays, 4,755 games / 428,461 samples, 12 epochs. Reinforcement learning was tried in four forms over ten runs; every one was null. Inference is greedy, with search disabled (5.1). Every analysis below comes from 145GB of ladder replays covering seven days.
+Training is behaviour cloning (BC) and nothing else: the top team's replays, 4,755 games/428,461 samples, 12 epochs. Reinforcement learning was tried in four forms over ten runs; every one was null. Inference is greedy, with search disabled (5.1). Every analysis below comes from 145GB of ladder replays covering seven days.
 
 Rule-based play plateaued at ~450-570 and self-BC with self-play RL stalled at 46%; switching the teacher from myself to a stronger stranger jumped it to ~832; cloning the top team on its own deck reached 934, and 3.09x the teacher data 938.8. None of the eleven attempts after that transferred.
 
@@ -50,7 +50,7 @@ The most expensive failures were defects in the instrument.
 | Defect | Damage |
 |---|---|
 | Opponent policy a month old | reported 86.0% where the ladder was 43.6% |
-| Opponent forfeits counted as my losses | identical conditions gave 81 / 86 / 15 / 87 / 81 / 81% |
+| Opponent forfeits counted as my losses | identical conditions gave 81/86/15/87/81/81% |
 | Silent initialisation bug | inference ran on random weights: 26.6% was really 61.9% |
 | Distillation target weaker than the student | sole cause of ten null RL runs |
 | The ladder's detection floor | byte-identical tars scatter with a standard deviation (sd) of ≈27 |
@@ -101,12 +101,12 @@ I measured stability directly by resubmitting byte-identical tars.
 
 | Tar (byte-identical) | n | Draws | Mean | sd |
 |---|---|---|---|---|
-| champion | 5 | 936.7 / 980.4 / 976.0 / 945.0 / 917.8 | 951.2 | 26.6 |
-| weight averaging | 3 | 938.0 / 973.5 / 921.1 | 944.2 | 26.7 |
+| champion | 5 | 936.7/980.4/976.0/945.0/917.8 | 951.2 | 26.6 |
+| weight averaging | 3 | 938.0/973.5/921.1 | 944.2 | 26.7 |
 
 Identical contents scatter with sd≈27. Differences carry sd≈38, so one paired submission detects only ~76 Elo at 2σ, and every ladder A/B I had run fell below that floor. What this closes is the methodology: calibrating an offline metric with one pair cannot work when the effect judged (~+30 Elo) is below the resolution.
 
-The same underestimate returned at the end: refreshing both slots 24.6h before the deadline gave 846.1 / 817.3, 3.7σ below six prior draws (mean 944.7), with the field flat. I had trusted an sd estimated from n=6.
+The same underestimate returned at the end: refreshing both slots 24.6h before the deadline gave 846.1/817.3, 3.7σ below six prior draws (mean 944.7), with the field flat. I had trusted an sd estimated from n=6.
 
 ### 5.5 Offline evaluation cannot predict a deck switch
 
