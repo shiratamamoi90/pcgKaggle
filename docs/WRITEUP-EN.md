@@ -29,13 +29,13 @@ Rule-based play plateaued at ~450-570 and self-BC with self-play RL stalled at 4
 
 ## 3. Deck
 
-Alakazam ex + Dudunsparce (フーディンex + ノココッチ). I did not build it. I used the teacher's 60 cards unchanged. That was deliberate.
+Alakazam ex + Dudunsparce. I did not build it. I used the teacher's 60 cards unchanged. That was deliberate.
 
 Once the strategy is "imitate a strong player's policy", the deck is a dependent variable of it. Moving one card creates positions outside the teacher's data and breaks the premise of imitation, so I prioritised deck-policy consistency over novelty. Twice I built clones that switched to the dominant archetype; both lost heavily (−259.4 and −186.1 Elo, 5.5).
 
 The 60 cards are 22 distinct cards, 9 at 4 copies (36 cards, 60%) — a build that repeats one line regardless of the opening, which is what the policy needs: BC copies one stable win condition far better than a build full of branches.
 
-Across 61,994 games the field was Grimmsnarl (Marnie's Grimmsnarl ex / マリィのオーロンゲex) 58.4%, other 29.2% across 97 lists, Alakazam (mine) 9.4%. All 20 teams playing Alakazam had a losing record against Grimmsnarl (best 49.7%; the teacher himself 49.2%), and weighted by the field (the mix of opponent decks on the ladder), my deck ranked 9th of 10 at 45.4% against 64.5% for Ogerpon. Even a perfect clone was capped at 49.2%: this deck was chosen because the teacher played it, not because it was strong.
+Across 61,994 games the field was Grimmsnarl (Marnie's Grimmsnarl ex) 58.4%, other 29.2% across 97 lists, Alakazam (mine) 9.4%. All 20 teams playing Alakazam had a losing record against Grimmsnarl (best 49.7%; the teacher himself 49.2%), and weighted by the field (the mix of opponent decks on the ladder), my deck ranked 9th of 10 at 45.4% against 64.5% for Ogerpon. Even a perfect clone was capped at 49.2%: this deck was chosen because the teacher played it, not because it was strong.
 
 And one Grimmsnarl list accounted for 78.7% of that archetype across 175 teams: deck construction here was finished, and the remaining difference lived on the policy side.
 
@@ -115,7 +115,7 @@ The same underestimate returned at the end: refreshing both slots 24.6h before t
 | First | 58.1% against the champion (n=2,400, 8.0σ) | −259.4 Elo |
 | Second | archetype win rates reproduced to 0.7pp | −186.1 Elo |
 
-The second was not a broken build. It was the only clone reproducing live archetype win rates to 0.7pp and it beat the champion on every offline metric. It still lost 186 Elo. The first beats the second head-to-head at 53.5%: the one that looked better lost by more. I re-verified it against the shipped artifact (weights, md5 and all 60 cards matching): a correctly functioning agent.
+The second was not a broken build. It was the only clone reproducing live archetype win rates to 0.7pp and it beat the champion on every offline metric. It still lost 186 Elo. The first beats the second head-to-head at 53.5%: the one that looked better lost by more. I re-verified it (weights, md5 and all 60 cards matching): a correctly functioning agent.
 
 My hypothesis, stated as untested: the archetype matrix measures the average over all pilots of an archetype, so using it as my own expectation assumes I pilot at that average skill. This clone agreed 66.3% with a team outside its teacher pool — it had learned an average pilot — and on the destination deck 58.4% of games are mirrors, exactly where a gap in policy quality shows up undiluted.
 
