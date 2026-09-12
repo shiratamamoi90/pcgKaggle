@@ -1,6 +1,7 @@
 # PTCG AI Battle Challenge — このリポジトリの現在地
 
-最終更新: **2026-08-17**。チーム名 **shiratama**（`dotshiratama`）。
+最終更新: **2026-09-12**。チーム名 **shiratama**（`dotshiratama`）。
+**Strategy カテゴリへの Writeup 提出は 2026-09-06 に完了。審査は 09-14 から 10-11。**
 
 このリポジトリは当初 **Simulation カテゴリ**のエージェント開発用に作られた。
 そのカテゴリは **2026-08-16 23:59 UTC に提出締切を迎えて終了**した。
@@ -102,7 +103,7 @@ Card_ID List_EN.pdf / Card_ID List_JP.pdf   カードID一覧（各 130〜180MB�
 | [FINDINGS.md](FINDINGS.md) | 2ヶ月・50提出ぶんの測定結果 | レポート本体の骨格 |
 | [LINEAGE.md](LINEAGE.md) | 全世代の技術詳細と系統 | 手法説明の裏付け |
 | `tools/` `scratchpad/*.py` | BC訓練・h2h評価・アーキタイプ行列 | 再現性の提示 |
-| `submission_*.tar.gz` 6本 | 各世代の実物 | 主張の物証 |
+| `submission_*.tar.gz` 4本 | レポートが数字を引いた世代の実物 | 主張の物証 |
 
 ---
 
