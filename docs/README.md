@@ -102,8 +102,12 @@ Card_ID List_EN.pdf / Card_ID List_JP.pdf   カードID一覧（各 130〜180MB�
 | `episodes/` 145GB | 07-26〜08-01 の実ラダー7日分のリプレイ | メタ分析の一次データ。**他チームが持っていない規模** |
 | [FINDINGS.md](FINDINGS.md) | 2ヶ月・50提出ぶんの測定結果 | レポート本体の骨格 |
 | [LINEAGE.md](LINEAGE.md) | 全世代の技術詳細と系統 | 手法説明の裏付け |
-| `tools/` `scratchpad/*.py` | BC訓練・h2h評価・アーキタイプ行列 | 再現性の提示 |
 | `submission_*.tar.gz` 4本 | レポートが数字を引いた世代の実物 | 主張の物証 |
+
+> **★2026-09-12: 提出は確定し、以降変更しない。**
+> 判断基準は「GitHub に残っていれば足りる」（ユーザ指示）。
+> コード（`tools/` `scratchpad/*.py` `requirements.txt` `main.py`）は削除した。
+> 何をどう測ったかは CHRONICLE と LINEAGE に記述として残っている。
 
 ---
 
@@ -127,10 +131,15 @@ Card_ID List_EN.pdf / Card_ID List_JP.pdf   カードID一覧（各 130〜180MB�
 
 ## ④ 残してあるもの / 消したもの
 
-**残す**: `episodes/`（145G, 一次データ）、`tools/`、`scratchpad/*.py`（分析スクリプト70本）、
-`logs/`（訓練ログ＝主張の証拠）、`champion/`、`docs/`、`requirements.txt`、
+**残す**: `episodes/`（145G, 一次データ）、`logs/`（訓練ログ）、`champion/`、`docs/`、
 **提出tar 4本**（`majkel_bc_6d`＝champion / `metapool` / `luca_solo` / `soup_g8`）。
 この4本は WRITEUP.md が数字を挙げている提出物に対応する（−186.1 / −259.4 Elo、5.4節の反復提出）。
+
+**2026-09-12 にコードを全削除**: `tools/`、`scratchpad/`（分析スクリプト70本を含む）、
+`requirements.txt`、`main.py`、`deck.csv`。**提出は確定して以降変更しないため**（ユーザ判断）。
+出荷版のコードは `champion/main.py` として GitHub に残っており、
+何をどう測ったかは [CHRONICLE.md](CHRONICLE.md) と [LINEAGE.md](LINEAGE.md) に記述として残る。
+**再訓練・再評価はもうできない。**
 
 **2026-09-12 に削除（計 約470M）**: 提出tar 3本（`majkel_12d` `recency_d2` `yushin`＝
 レポートが数字を引いていない世代）、`scratchpad/_champ`（champion の複製）、
