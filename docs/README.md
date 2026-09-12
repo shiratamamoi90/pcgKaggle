@@ -79,7 +79,8 @@
 | 賞金 | 総額 $240,000 / **上位8チームに各 $30,000** |
 | 参加チーム数 | 420（08-17 時点） |
 | 参加資格 | **Simulation カテゴリへの参加が必須** → 我々は充足済み |
-| 我々の参加状態 | **未参加**（Rules 同意がまだ） |
+| 我々の参加状態 | **参加登録・Writeup 提出とも完了（2026-09-06）** |
+| 審査期間 | 2026-09-14 から 10-11。上位8チームは第2ラウンドへ |
 
 ### 審査で見られるもの
 
@@ -125,9 +126,15 @@ Card_ID List_EN.pdf / Card_ID List_JP.pdf   カードID一覧（各 130〜180MB�
 
 ## ④ 残してあるもの / 消したもの
 
-**残す**: `episodes/`（145G, 一次データ）、`venv/`（分析基盤）、`cg/`、`tools/`、
-`scratchpad/*.py`（68本の分析スクリプト）、`logs/`（訓練ログ＝主張の証拠）、
-`models_bc/` `models_deploy/` `models_soup2/` `models_majkel_rl/`、提出tar 6本。
+**残す**: `episodes/`（145G, 一次データ）、`tools/`、`scratchpad/*.py`（分析スクリプト）、
+`logs/`（訓練ログ＝主張の証拠）、`champion/`、提出tar 7本、`docs/`、`requirements.txt`。
+
+**2026-09-06 に削除（計 約8G・いずれも再構築可能）**: `venv/`（6.5G。`requirements.txt` を
+取得済みなので `python -m venv venv && pip install -r requirements.txt` で戻せる）、
+`models_bc/` `models_deploy/` `models_soup2/` `models_majkel_rl/`（1.1G。champion の重みは
+`champion/model.pth` に、各世代の出荷物は提出tar に残っている）、`opponents/`（338M）、
+`cg/` `external/`（4.7M。Kaggle から再取得できる）。
+削除前に champion 3ファイルと提出tar 7本の健全性を確認済み。
 
 **08-17 に削除したもの（バイナリのみ・計 約6G）**: `scratchpad/data/`（episodes から
 再生成可能な派生テンソル 3.4G）、`models_pg_*/` `models_field_rl/`（全て null 判定済みの
