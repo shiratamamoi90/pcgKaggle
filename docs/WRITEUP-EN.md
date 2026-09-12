@@ -9,7 +9,7 @@ Over two months, conclusions I had recorded as "this is stronger" kept collapsin
 
 ## 1. Result
 
-Score 846.1, 673rd of 6,892 teams (top 9.8%), from 50 submissions across 48 experiments. These are provisional figures as of 2026-08-17 11:23 UTC: the ladder kept playing after the deadline, and while I checked it moved to 841.6, then 835.5.
+Score 846.1, 673rd of 6,892 teams (top 9.8%), from 50 submissions across 48 experiments. Provisional as of 2026-08-17 11:23 UTC: the ladder kept playing after the deadline and moved to 841.6, then 835.5 while I checked.
 
 Of the 48 experiments, 0 produced a significant improvement, 2 a significant degradation, 10 or more were null, 8 were defects in the measuring instrument, and I retracted 10 or more of my own conclusions. That distribution is the finding, and this report is a record of what does not work, measured with controls across 50 submissions.
 
@@ -17,9 +17,7 @@ Of the 48 experiments, 0 produced a significant improvement, 2 a significant deg
 
 ## 2. Method and final artifact
 
-The submission is main.py, model.pth, deck.csv and the official engine.
-
-The policy is a small Transformer with two heads, AlphaZero style. The encoder reads the board and emits a value; the decoder reads the candidate actions and emits a policy. With d_model=128, heads=2, ff=256, enc=1, dec=1, 98% of the 12.53M parameters are embeddings and the body is 0.265M. Cards enter as sparse (index, value) pairs summed by EmbeddingBag, making set information order-independent, and obvious quantities such as damage dealt go to the decoder rather than being rediscovered.
+The submission is main.py, model.pth, deck.csv and the official engine. The policy is a small Transformer with two heads, AlphaZero style: the encoder reads the board and emits a value, the decoder reads the candidate actions and emits a policy. 98% of the 12.53M parameters are embeddings and the body is 0.265M. Cards enter as sparse (index, value) pairs summed by EmbeddingBag, making set information order-independent, and obvious quantities such as damage dealt go straight to the decoder.
 
 Training is behaviour cloning (BC) and nothing else: the top team's replays, 4,755 games/428,461 samples, 12 epochs. Reinforcement learning was tried in four forms over ten runs; every one was null. Inference is greedy, with search disabled (5.1). Every analysis below comes from 145GB of ladder replays covering seven days.
 
