@@ -27,7 +27,9 @@
 > `finalLeaderboardHasBeenVerified: true` を確認した（内部API
 > `competitions.CompetitionService/GetCompetition`, id 116727）。
 > 順位とスコアの出典は `competitions/pokemon-tcg-ai-battle/leaderboard/download` が返した
-> `pokemon-tcg-ai-battle-publicleaderboard-2026-09-21T02:17:10.csv`。
+> **確定リーダーボード全文**で、[final_leaderboard_2026-09-21.csv](final_leaderboard_2026-09-21.csv)
+> としてこのリポジトリに入れてある（6,807チーム全行。Kaggle 側のファイル名は
+> `pokemon-tcg-ai-battle-publicleaderboard-2026-09-21T02:17:10.csv`）。
 
 ### 暫定値からどう動いたか
 
@@ -162,6 +164,7 @@ Card_ID List_EN.pdf / Card_ID List_JP.pdf   カードID一覧（各 130〜180MB�
 | **[WRITEUP-GUIDE.md](WRITEUP-GUIDE.md)** | **高評価Writeupの流れと書き方**。実際のルーブリックと1位提出物だけを根拠にした執筆指針 |
 | **[LINEAGE.md](LINEAGE.md)** | 技術の正典。全世代の中身・復元手順・死んだ軸の台帳（999行） |
 | [spec.md](spec.md) / [procedure.md](procedure.md) / [eval-axes.md](eval-axes.md) | Simulation カテゴリの記載。**役目は終えたが削除しない**（下記） |
+| **[final_leaderboard_2026-09-21.csv](final_leaderboard_2026-09-21.csv)** | **Simulation の確定リーダーボード全文**（6,807行 / 473KB）。①の数字の一次証拠。列は Rank, TeamId, TeamName, LastSubmissionDate, Score, SubmissionCount, TeamMemberUserNames |
 
 > **★旧コンペの記載は削除しない**（ユーザ指示 2026-08-17）。
 > Simulation 用の `spec.md` / `procedure.md` / `eval-axes.md` と、`CLAUDE.md` 第2部の

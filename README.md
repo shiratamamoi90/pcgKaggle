@@ -18,6 +18,7 @@ Kaggle [Pokémon TCG AI Battle Challenge](https://www.kaggle.com/competitions/po
 | `docs/CHRONICLE.md` | **全48施策の詳細記録。** 1件ごとに 目標 / 実施 / 成果または悪化 / 次の手順 |
 | `docs/LINEAGE.md` | 技術の正典。全世代の中身・復元手順・**死んだ軸の台帳**（③k から読む） |
 | `docs/README.md` | 現在地・最終結果・Strategy カテゴリの仕様 |
+| `docs/final_leaderboard_2026-09-21.csv` | **Simulation の確定リーダーボード全文**（6,807チーム）。最終結果の一次証拠 |
 | `docs/WRITEUP.md` | **Strategy 提出レポート本体（日本語のまま提出する）。制限は 2,000語** |
 | `docs/WRITEUP-EN.md` | 同レポートの英語版（本文 1,969語・参考訳・提出しない） |
 | `docs/WRITEUP-GUIDE.md` | Strategy カテゴリ（技術レポート）向けの整理 |
