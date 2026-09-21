@@ -9,7 +9,7 @@ Over two months, conclusions I had recorded as "this is stronger" kept collapsin
 
 ## 1. Result
 
-Score 846.1, 673rd of 6,892 teams (top 9.8%), from 50 submissions across 48 experiments. Provisional as of 2026-08-17 11:23 UTC: the ladder kept playing after the deadline and moved to 841.6, then 835.5 while I checked.
+Score 819.4, 995th of 6,807 teams (top 14.62%), from 50 submissions across 48 experiments. Final as of 2026-09-21: the ladder kept playing after the deadline, decaying from the 846.1 I recorded at submission.
 
 Of the 48 experiments, 0 produced a significant improvement, 2 a significant degradation, 10 or more were null, 8 were defects in the measuring instrument, and I retracted 10 or more of my own conclusions. That distribution is the finding, and this report is a record of what does not work, measured with controls across 50 submissions.
 
@@ -104,7 +104,7 @@ I measured stability directly by resubmitting byte-identical tars.
 
 Identical contents scatter with sd≈27. Differences carry sd≈38, so one paired submission detects only ~76 Elo at 2σ, and every ladder A/B I had run fell below that floor. What this closes is the methodology: calibrating an offline metric with one pair cannot work when the effect judged (~+30 Elo) is below the resolution.
 
-The same underestimate returned at the end: refreshing both slots 24.6h before the deadline gave 846.1/817.3, 3.7σ below six prior draws (mean 944.7), with the field flat. I had trusted an sd estimated from n=6.
+The same underestimate returned at the end: refreshing both slots 24.6h before the deadline gave 846.1/817.3 (final 819.4), 3.7σ below six prior draws (mean 944.7), with the field flat. I had trusted an sd estimated from n=6.
 
 ### 5.5 Offline evaluation cannot predict a deck switch
 
